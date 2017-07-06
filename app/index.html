@@ -25,48 +25,129 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-	<nav class="nav">
-		<div class="logo">logo</div>
-		<div class="menu">
-			<div class="menu__item">Memu1</div>
-			<div class="menu__item">Menu2</div>
-			<div class="menu__item">Menu3</div>
-		</div>
-	</nav>
 
-	<section class="section">
-		<div class="line-1">line 1</div>
-		<div class="line-2">line 2</div>
-		<div class="grid">
-			<div class="grid__item">
-				<div class="grid__item-img">img</div>
-				<h3 class="grid__item-head">title</h3>
-				<p class="grid__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, corporis.</p>
+	<header class="header">
+		<div class="container-flex">
+			<div class="header-top">
+				<a href="#" class="logo"> <img src="img/logo.png"></a>
+				<nav>
+					<ul class="menu">
+						<li class="menu__item"><a href="#">Home</a></li>
+						<li class="menu__item"><a href="#">Products</a></li>
+						<li class="menu__item"><a href="#">Service</a></li>
+						<li class="menu__item"><a href="#">Work</a></li>
+						<li class="menu__item"><a href="#">Pricing</a></li>
+						<li class="menu__item"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div class="grid__item">
-				<div class="grid__item-img">img</div>
-				<h3 class="grid__item-head">title</h3>
-				<p class="grid__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, corporis.</p>
+
+			<div class="header-center">
+				<h1 class="header__head">Digital Product Agency.</h1>
+				<h3 class="header__desc">Look no further. You came to the right ... place</h3>
+				<button class="button">Watch wideo</button>
 			</div>
-			<div class="grid__item">
-				<div class="grid__item-img">img</div>
-				<h3 class="grid__item-head">title</h3>
-				<p class="grid__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, corporis.</p>
+		</div>
+	</header>
+
+	<section class="products">
+		<div class="container-flex">
+			<div class="products__head">
+				<h2>Latest Products</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
 			</div>
-			<div class="grid__item">
-				<div class="grid__item-img">img</div>
-				<h3 class="grid__item-head">title</h3>
-				<p class="grid__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, corporis.</p>
+			<div class="products-cards">
+				<div class="products__card">
+					<img src="img/products/01.jpg" alt="">
+					<h3>Workspace <span>MANAGEMENT</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="products__card">
+					<img src="img/products/02.jpg" alt="">
+					<h3>Workspace <span>MANAGEMENT</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+					<a href="#">Read more</a>
+				</div>
+				<div class="products__card">
+					<img src="img/products/03.jpg" alt="">
+					<h3>Workspace <span>MANAGEMENT</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+					<a href="#">Read more</a>
+				</div>
 			</div>
 		</div>
 	</section>
-	<footer class="footer">footer</footer>
+
+	<section class="image">
+		<img src="img/products/01.jpg" alt="">
+		<img src="img/products/03.jpg" alt="">
+	</section>
+
+	<section class="card">
+		<div class="container-flex">
+			<div class="grid">
+				<div class="grid__item">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+				<div class="grid__item active">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+				<div class="grid__item">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+				<div class="grid__item">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+				<div class="grid__item">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+				<div class="grid__item">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<h3>Responsive</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, natus.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	
+	<section class="display">
+		<div class="container-flex">
+			<div class="flex-center">
+				<h2>Displaying the Result</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat fuga unde consequuntur magnam sed eveniet officiis, obcaecati sunt esse odit soluta quidem atque reprehenderit nostrum ipsa nulla. Ipsa, similique.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="container-flex">
+			<div class="grid-img">
+				<img src="img/gallery/01.jpg" alt="">
+				<img src="img/gallery/02.jpg" alt="">
+				<img src="img/gallery/03.jpg" alt="">
+				<img src="img/gallery/04.jpg" alt="">
+				<img src="img/gallery/05.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
 	<script src="js/scripts.min.js"></script>
 
 </body>

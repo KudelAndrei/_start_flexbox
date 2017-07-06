@@ -36,96 +36,139 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+	margin: 0
 
-.nav
+ul, li 
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.container-flex	
+	max-width: 1140px
+	margin: 0 auto
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+
+
+.header, .display
+	position: relative
+	background-image: url(../img/01.jpg)
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	min-height: 650px
+	height: 100vh
+
+.header-top
 	display: flex
 	justify-content: space-between
-	align-items: flex-end
-	max-width: 1140px
-	margin: 0 auto
-	margin-bottom: 20px
-	border: 1px solid #ccc
+	height: 80px
+	align-items: center
 
 .logo
-	width: 100px	
-	height: 50px
-	background-color: #000
-	color: #fff
 	display: flex
-	justify-content: center
 	align-items: center
 
-.menu
-	display: flex
 
-.menu__item
-	background-color: #000
-	color: #fff
-	margin-right: 5px
-	width: 80px
-	height: 30px
-	justify-content: center
+nav
 	display: flex
-	flex: auto
-	&:last-child
-		margin-right: 0
+	align-items: center
+	.menu
+		display: flex
+		justify-content: center
+		.menu__item
+			margin: 0 20px
 
-.section
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
+.header-center
 	display: flex
-	margin: 0 auto
 	flex-direction: column
-	max-width: 1140px
-	border: 1px solid #ccc
-	margin-bottom: 20px
+	align-items: center
+	margin: auto
+	
+.products
+	margin-bottom: 50px
 
-.line-1
-	background-color: #000
-	color: #fff
-	width: 70%
-	min-height: 40px
-	margin-left: 40px
-	margin-bottom: 20px
+.products__head
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 60%
+	margin: 40px auto
+	text-align: center
 
-.line-2
-	background-color: #000
-	color: #fff
-	width: 80%
-	min-height: 40px
-	margin-left: 40px
-	margin-bottom: 20px
+
+.products-cards
+	display: flex 
+
+.products__card
+	display: flex
+	flex-direction: column 
+	justify-content: space-between
+	margin-right: 20px
+	margin-bottom: 30px
+	img 
+		max-width: 100%
+
+.image
+	display: flex
+	justify-content: space-between
+	img 
+		flex-grow: 1
+		margin-right: 8px
+		&:last-child
+			margin-right: 0
+
+
+.card
+	display: flex
+	background-color: #fafafa
+	padding: 70px 0
 
 .grid
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
+	justify-content: center
 	flex-wrap: wrap
+	flex: 0 0 30%
+	.grid__item
+		display: flex
+		flex-direction: column
+		padding: 40px
+		background-color: #fff
+		margin-right: 3px
+		margin-bottom: 3px
+		flex: 0 0 calc(26% - 6px)
+		&.active
+			background-color: #17bed2
+			color: #fff
 
-.grid__item
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
+
+.display
+	background-image: url(../img/02.jpg)
+	max-height: 300px
+	min-height: auto
+
+.flex-center
 	display: flex
 	flex-direction: column
-	align-items: center
-	justify-content: center
-	flex: 0 1 calc(25% - 20px)
-	margin: 0 10px 10px
-	.grid__item-img
-		background-color: #000
-		color: #fff
-		width: 100%
-		height: 100px
+	margin: auto
+	text-align: center
 
-.footer
-	width: 100%
-	background-color: #000
-	color: #fff
-	min-height: 80px
+
+.gallery
+	padding: 60px 0
+
+.grid-img
+	display: flex
+	flex-wrap: wrap
+	img 
+		margin-right: 10px
+		margin-bottom: 10px
+		width: 32%
+		&:nth-child(0)
+			flex-grow: 3
+
 @import "media" // Всегда в конце
